@@ -1,7 +1,3 @@
-//Exercise#3 : Debugging 1
-
-//Start coding here
-
 let productSales = [
   { id: 1, menu: "ลาเต้เย็น", amount: 120, sales: 1200000.22 },
   { id: 2, menu: "คาปูชิโน่", amount: 1, sales: 32000 },
@@ -23,11 +19,11 @@ let productSales = [
 function calculateTotalSales(items) {
   let total = 0;
   for (let item of items) {
-    total = total + item.sale;
+    total = total + item.sales;
   }
   return total;
 }
 
-let total = calculateTotalSales();
+let total = calculateTotalSales(productSales);
 
 console.log("Total sales: ", total);
